@@ -27,8 +27,8 @@ type FundRepository interface {
 	GetAll() ([]*Fund, error)
 }
 
-// FundUseCase defines business logic for funds
-type FundUseCase interface {
+// FundService defines business logic for funds
+type FundService interface {
 	GetFund(id string) (*Fund, error)
 	ListFunds() ([]*Fund, error)
 }

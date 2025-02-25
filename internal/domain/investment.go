@@ -30,8 +30,8 @@ type InvestmentRepository interface {
 	Update(investment *Investment) error
 }
 
-// InvestmentUseCase defines business logic for investments
-type InvestmentUseCase interface {
+// InvestmentService defines business logic for investments
+type InvestmentService interface {
 	CreateInvestment(customerID, fundID string, amount int64) (*Investment, error)
 	GetInvestment(id string) (*Investment, error)
 	GetCustomerInvestments(customerID string) ([]*Investment, error)
